@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial_compare/flutter_sliding_tutorial_page.dart';
 import 'package:flutter_tutorial_compare/tutorial_coach_mark_page.dart';
 
 void main() {
@@ -46,7 +47,13 @@ class Home extends StatelessWidget {
             RaisedButton(
               child: Text('flutter_sliding_tutorial'),
               onPressed: () {
-                // todo
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => FlutterSlidingTutorialPage(),
+                    fullscreenDialog: true,
+                  ),
+                );
               },
             ),
             RaisedButton(
