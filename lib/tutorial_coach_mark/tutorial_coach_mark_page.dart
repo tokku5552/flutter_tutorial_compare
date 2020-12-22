@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_tutorial_compare/tutorial_coach_mark_model.dart';
+import 'package:flutter_tutorial_compare/tutorial_coach_mark/tutorial_coach_mark_model.dart';
 import 'package:provider/provider.dart';
 import 'package:tutorial_coach_mark/tutorial_coach_mark.dart';
 

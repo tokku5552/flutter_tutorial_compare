@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sliding_tutorial/flutter_sliding_tutorial.dart';
-import 'package:flutter_tutorial_compare/flutter_sliding_tutorial_model.dart';
-import 'package:flutter_tutorial_compare/page/tutorial_1_page.dart';
+import 'package:flutter_tutorial_compare/flutter_sliding_tutorial/flutter_sliding_tutorial_model.dart';
+import 'package:flutter_tutorial_compare/flutter_sliding_tutorial/page/tutorial_1_page.dart';
 import 'package:provider/provider.dart';
 
 class FlutterSlidingTutorialPage extends StatelessWidget {
