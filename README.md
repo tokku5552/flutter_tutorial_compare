@@ -3,8 +3,8 @@
 A project to test the Flutter tutorial page as a sample  
 
 ## DEMO
-![Screenshot showing](docs/images/flutter_overboard_demo.gif "flutter_overboard")
-![Screenshot showing](docs/images/tutorial_coach_mark_demo.gif "tutorial_coach_mark_demo")
+<img src ="docs/images/flutter_overboard_demo.gif" width="600">
+<img src ="docs/images/tutorial_coach_mark_demo.gif" width="600">
 
 ## Libraries
 - provider: 4.3.2+3  
