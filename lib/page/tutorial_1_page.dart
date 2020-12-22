@@ -21,84 +21,11 @@ class Tutorial1Page extends StatelessWidget {
                 widthFactor: 1,
                 heightFactor: 0.4,
                 child: SlidingContainer(
-                    child: Image.asset(
-                      "assets/s_2_3.png",
+                    child: Icon(
+                      Icons.account_circle,
+                      size: 200.0,
                     ),
                     offset: 300),
-              ),
-            ),
-            Center(
-              child: FractionallySizedBox(
-                widthFactor: 0.55,
-                heightFactor: 0.18,
-                child: SlidingContainer(
-                    child: Image.asset(
-                      "assets/s_2_1.png",
-                    ),
-                    offset: 100),
-              ),
-            ),
-            Opacity(
-              opacity: 0.5,
-              child: Align(
-                alignment: Alignment(0.3, -0.35),
-                child: FractionallySizedBox(
-                  widthFactor: 0.75,
-                  heightFactor: 0.20,
-                  child: SlidingContainer(
-                      child: Image.asset(
-                        "assets/s_2_2.png",
-                      ),
-                      offset: 170),
-                ),
-              ),
-            ),
-            Align(
-              alignment: Alignment(-0.2, -0.27),
-              child: FractionallySizedBox(
-                widthFactor: 0.16,
-                heightFactor: 0.07,
-                child: SlidingContainer(
-                    child: Image.asset(
-                      "assets/s_2_4.png",
-                    ),
-                    offset: 50),
-              ),
-            ),
-            Align(
-              alignment: Alignment(0.3, -0.35),
-              child: FractionallySizedBox(
-                widthFactor: 0.14,
-                heightFactor: 0.07,
-                child: SlidingContainer(
-                    child: Image.asset(
-                      "assets/s_2_6.png",
-                    ),
-                    offset: 150),
-              ),
-            ),
-            Align(
-              alignment: Alignment(0.8, -0.3),
-              child: FractionallySizedBox(
-                widthFactor: 0.15,
-                heightFactor: 0.10,
-                child: SlidingContainer(
-                    child: Image.asset(
-                      "assets/s_2_5.png",
-                    ),
-                    offset: 50),
-              ),
-            ),
-            Align(
-              alignment: Alignment(0.7, 0.1),
-              child: FractionallySizedBox(
-                widthFactor: 0.25,
-                heightFactor: 0.15,
-                child: SlidingContainer(
-                    child: Image.asset(
-                      "assets/s_2_7.png",
-                    ),
-                    offset: 200),
               ),
             ),
             Align(
@@ -106,7 +33,7 @@ class Tutorial1Page extends StatelessWidget {
               child: SlidingContainer(
                 offset: 250,
                 child: Text(
-                  "e-Commerce",
+                  "ページを変えれる",
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 30,

@@ -37,9 +37,9 @@ class FlutterSlidingTutorialPage extends StatelessWidget {
                     size: 10,
                     color: Color(0xFF29B6F6),
                   ),
-                  // inActiveIndicator: SvgPicture.asset(
-                  //   "assets/hollow_circle.svg",
-                  // ),
+                  inActiveIndicator: Container(
+                    color: Colors.yellow,
+                  ),
                   margin: 8,
                   sizeIndicator: 10,
                 ),
