@@ -1,5 +1,5 @@
 # Flutter Tutorial Compare 
-
+[![GitHub license](https://img.shields.io/github/license/tokku5552/flutter_tutorial_compare)](https://github.com/tokku5552/flutter_tutorial_compare)
 A project to test the Flutter tutorial page as a sample  
 
 ## DEMO
