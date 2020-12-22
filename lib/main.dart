@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_tutorial_compare/flutter_overboard/flutter_overboard_page.dart';
 import 'package:flutter_tutorial_compare/flutter_sliding_tutorial/flutter_sliding_tutorial_page.dart';
 import 'package:flutter_tutorial_compare/tutorial_coach_mark/tutorial_coach_mark_page.dart';
 
@@ -59,7 +60,13 @@ class Home extends StatelessWidget {
             RaisedButton(
               child: Text('flutter_overboard'),
               onPressed: () {
-                // todo
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => FlutterOverboardPage(),
+                    fullscreenDialog: true,
+                  ),
+                );
               },
             ),
           ],
