@@ -54,6 +54,7 @@ class FlutterSlidingTutorialPage extends StatelessWidget {
   Widget _slidingTutorial(
       PageController _pageController, FlutterSlidingTutorialModel model) {
     return AnimatedBackgroundColor(
+      colors: model.colors,
       pageController: _pageController,
       pageCount: model.pageCount,
       child: Container(
