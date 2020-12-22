@@ -1,14 +1,16 @@
 # Flutter Tutorial Compare 
-[![GitHub license](https://img.shields.io/github/license/tokku5552/flutter_tutorial_compare)](https://github.com/tokku5552/flutter_tutorial_compare)
+[![GitHub license](https://img.shields.io/github/license/tokku5552/flutter_tutorial_compare)](https://github.com/tokku5552/flutter_tutorial_compare)  
 A project to test the Flutter tutorial page as a sample  
 
 ## DEMO
+![Screenshot showing](docs/images/flutter_overboard_demo.gif "flutter_overboard")
+![Screenshot showing](docs/images/tutorial_coach_mark_demo.gif "tutorial_coach_mark_demo")
 
 ## Libraries
-  provider: ^4.3.2+3  
-  tutorial_coach_mark: ^0.5.2  
-  flutter_sliding_tutorial: ^0.1.0  
-  flutter_overboard: ^1.1.5  
+- provider: 4.3.2+3  
+- tutorial_coach_mark: 0.5.2  
+- flutter_sliding_tutorial: 0.1.0  
+- flutter_overboard: 1.1.5  
 
 ## License
 Copyright (c) 2020 tokku5552  
