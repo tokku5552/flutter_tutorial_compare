@@ -1,3 +1,10 @@
+/*
+ * Copyright (c) 2020 tokku5552
+ *
+ * This software is released under the MIT License.
+ * https://opensource.org/licenses/mit-license.php
+ *
+ */
 import 'package:flutter/material.dart';
 import 'package:tutorial_coach_mark/animated_focus_light.dart';
 import 'package:tutorial_coach_mark/tutorial_coach_mark.dart';

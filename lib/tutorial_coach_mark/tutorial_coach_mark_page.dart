@@ -1,3 +1,10 @@
+/*
+ * Copyright (c) 2020 tokku5552
+ *
+ * This software is released under the MIT License.
+ * https://opensource.org/licenses/mit-license.php
+ *
+ */
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial_compare/tutorial_coach_mark/tutorial_coach_mark_model.dart';
 import 'package:provider/provider.dart';
