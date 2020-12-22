@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_sliding_tutorial/flutter_sliding_tutorial.dart';
 import 'package:flutter_tutorial_compare/flutter_sliding_tutorial/flutter_sliding_tutorial_model.dart';
 import 'package:flutter_tutorial_compare/flutter_sliding_tutorial/page/tutorial_1_page.dart';
+import 'package:flutter_tutorial_compare/flutter_sliding_tutorial/page/tutorial_2_page.dart';
 import 'package:provider/provider.dart';
 
 class FlutterSlidingTutorialPage extends StatelessWidget {
@@ -74,7 +75,7 @@ class FlutterSlidingTutorialPage extends StatelessWidget {
       case 0:
         return Tutorial1Page(index, model.notifier);
       case 1:
-        return Tutorial1Page(index, model.notifier);
+        return Tutorial2Page(index, model.notifier);
       default:
         throw ArgumentError("Unknown position :$index");
     }

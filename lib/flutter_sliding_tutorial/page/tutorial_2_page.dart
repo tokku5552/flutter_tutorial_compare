@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sliding_tutorial/flutter_sliding_tutorial.dart';
 
-class Tutorial1Page extends StatelessWidget {
+class Tutorial2Page extends StatelessWidget {
   final int page;
   final ValueNotifier<double> notifier;
 
-  Tutorial1Page(this.page, this.notifier);
+  Tutorial2Page(this.page, this.notifier);
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class Tutorial1Page extends StatelessWidget {
                 heightFactor: 0.4,
                 child: SlidingContainer(
                     child: Icon(
-                      Icons.account_circle,
+                      Icons.create,
                       size: 200.0,
                     ),
                     offset: 300),
@@ -33,7 +33,7 @@ class Tutorial1Page extends StatelessWidget {
               child: SlidingContainer(
                 offset: 250,
                 child: Text(
-                  "スワイプすると",
+                  "ページを変えれる",
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 30,
