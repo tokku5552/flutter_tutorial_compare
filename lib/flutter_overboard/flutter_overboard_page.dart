@@ -12,31 +12,23 @@ import 'package:provider/provider.dart';
 import 'package:tutorial_coach_mark/tutorial_coach_mark.dart';
 
 class FlutterOverboardPage extends StatelessWidget {
-  final List<TargetFocus> targets = List();
-
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider<TutorialCoachMarkModel>(
-      create: (_) => TutorialCoachMarkModel()..init(),
-      child: Scaffold(
-        appBar: AppBar(
-          title: Text('FlutterOverboardPage'),
-        ),
-        body:
-            Consumer<TutorialCoachMarkModel>(builder: (context, model, child) {
-          return OverBoard(
-            pages: pages,
-            showBullets: true,
-            skipCallback: () {
-              // when user select SKIP
-              Navigator.pop(context);
-            },
-            finishCallback: () {
-              // when user select NEXT
-              Navigator.pop(context);
-            },
-          );
-        }),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('FlutterOverboardPage'),
+      ),
+      body: OverBoard(
+        pages: pages,
+        showBullets: true,
+        skipCallback: () {
+          // when user select SKIP
+          Navigator.pop(context);
+        },
+        finishCallback: () {
+          // when user select NEXT
+          Navigator.pop(context);
+        },
       ),
     );
   }
