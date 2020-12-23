@@ -34,20 +34,21 @@ class TutorialCoachMarkPage extends StatelessWidget {
                   child: Text('focus'),
                   onPressed: () {
                     model.showTutorial(context);
+                    print("onTap focus1");
                   },
                 ),
                 RaisedButton(
                   key: model.keyButton1,
                   child: Text('focus1'),
                   onPressed: () {
-                    // todo
+                    print("onTap focus1");
                   },
                 ),
                 RaisedButton(
                   key: model.keyButton2,
                   child: Text('focus2'),
                   onPressed: () {
-                    // todo
+                    print("onTap focus2");
                   },
                 ),
               ],
