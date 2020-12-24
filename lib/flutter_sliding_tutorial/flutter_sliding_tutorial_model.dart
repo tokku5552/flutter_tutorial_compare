@@ -19,4 +19,8 @@ class FlutterSlidingTutorialModel extends ChangeNotifier {
     this.notifier = ValueNotifier(0);
     this.pageCount = 2;
   }
+
+  void changeNotifier(ValueNotifier<double> notifier) {
+    this.notifier = notifier;
+  }
 }

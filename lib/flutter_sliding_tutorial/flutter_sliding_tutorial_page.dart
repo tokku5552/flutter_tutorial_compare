@@ -80,8 +80,10 @@ class FlutterSlidingTutorialPage extends StatelessWidget {
   Widget _getPageByIndex(int index, FlutterSlidingTutorialModel model) {
     switch (index % 2) {
       case 0:
+        model.changeNotifier(ValueNotifier(0));
         return Tutorial1Page(index, model.notifier);
       case 1:
+        model.changeNotifier(ValueNotifier(1));
         return Tutorial2Page(index, model.notifier);
       default:
         throw ArgumentError("Unknown position :$index");
