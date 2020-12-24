@@ -5,10 +5,12 @@
  * https://opensource.org/licenses/mit-license.php
  *
  */
+
 import 'package:flutter/material.dart';
 import 'package:flutter_tutorial_compare/flutter_overboard/flutter_overboard_page.dart';
 import 'package:flutter_tutorial_compare/flutter_sliding_tutorial/flutter_sliding_tutorial_page.dart';
 import 'package:flutter_tutorial_compare/tutorial_coach_mark/tutorial_coach_mark_page.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {
   runApp(MyApp());
@@ -31,6 +33,7 @@ class MyApp extends StatelessWidget {
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    WidgetsBinding.instance.addPostFrameCallback((_) => _showTutorial(context));
     return Scaffold(
       appBar: AppBar(
         title: Text('Flutter Tutorial Compare'),
@@ -80,5 +83,20 @@ class Home extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  void _showTutorial(BuildContext context) async {
+    final pref = await SharedPreferences.getInstance();
+
+    if (pref.getBool('isAlreadyFirstLaunch') != true) {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => FlutterOverboardPage(),
+          fullscreenDialog: true,
+        ),
+      );
+      pref.setBool('isAlreadyFirstLaunch', true);
+    }
   }
 }
